@@ -19,7 +19,11 @@
 
   <div class="row">
     <h4>Forecast for <%= @destination.name %>:</h4>
-
+    <p>Date: <%= @destination.forcast.forcast_date %> </p>
+    <p>Current Temperature: <%= @destination.forcast.current_temperature %> </p>
+    <p>Today's high: <%= @destination.forcast.min_temp %> </p>
+    <p>Today's low: <%= @destination.forcast.max_temp %> </p>
+    <p>Weather Summary: <%= @destination.forcast.description %> </p>
   </div>
 
   <div class="row">
